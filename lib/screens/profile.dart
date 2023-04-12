@@ -158,7 +158,31 @@ class _ProfileState extends State<Profile> {
               ),
                SizedBox(
                 width: 15,
-              ),    
+              ), 
+                    ElevatedButton.icon(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.logout,
+                  size: 24.0,
+                ),
+                label: Text(
+                  "Log out",
+                  style: TextStyle(fontSize: 17),
+                ),
+                style: ButtonStyle(
+                  backgroundColor: MaterialStateProperty.all(
+                      Color.fromARGB(143, 255, 55, 112)),
+                  padding: MaterialStateProperty.all(
+                      EdgeInsets.symmetric(vertical: 10, horizontal: 33)),
+                  shape: MaterialStateProperty.all(
+                    RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(7),
+                    ),
+                  ),
+                ),
+              ),
+            ],
+          ),    
    ]
     );
   }
