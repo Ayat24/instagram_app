@@ -101,7 +101,8 @@ class _HomeState extends State<Home> {
             ),
           ),
  Container(
-           
+              margin: EdgeInsets.fromLTRB(10, 0, 0, 10),
+              width: double.infinity,
               child: Text(
                 "10 Likes",
                 textAlign: TextAlign.start,
