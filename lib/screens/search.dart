@@ -15,7 +15,9 @@ class _SearchState extends State<Search> {
       backgroundColor: mobileBackgroundColor,
       appBar: AppBar(
         backgroundColor: mobileBackgroundColor,
-        title: TextFormField(),
+        title: TextFormField(
+          decoration: const InputDecoration(labelText: 'Search for a user...'),
+        ),
       ),
     );
   }
