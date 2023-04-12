@@ -35,6 +35,20 @@ class _ProfileState extends State<Profile> {
                       "https://i.pinimg.com/564x/94/df/a7/94dfa775f1bad7d81aa9898323f6f359.jpg"),
                 ),
               ),
+      
+                child: Row(
+              
+                  children: [
+                    Column(
+                      children: [
+                        Text(
+                          "1",
+                          style: TextStyle(
+                            fontSize: 22,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                       
             ],
           )
         ],
