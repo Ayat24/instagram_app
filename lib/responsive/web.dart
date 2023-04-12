@@ -51,6 +51,10 @@ class _WebScreenState extends State<WebScreen> {
           ),
         ],
         backgroundColor: mobileBackgroundColor,
+        title: SvgPicture.asset(
+          "assets/img/instagram.svg",
+          color: primaryColor,
+          height: 32,
       ),
     );
   }
