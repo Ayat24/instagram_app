@@ -21,7 +21,14 @@ class _ProfileState extends State<Profile> {
         children: [
           Row(
             children: [
-              Container(),
+              Container(
+                margin: EdgeInsets.only(left: 22),
+                padding: EdgeInsets.all(4),
+                decoration: BoxDecoration(
+                  shape: BoxShape.circle,
+                  color: Color.fromARGB(125, 78, 91, 110),
+                ),
+              ),
             ],
           )
         ],
