@@ -17,6 +17,15 @@ class _ProfileState extends State<Profile> {
         backgroundColor: mobileBackgroundColor,
         title: Text("Layla Hassan"),
       ),
+      body: Column(
+        children: [
+          Row(
+            children: [
+              Container(),
+            ],
+          )
+        ],
+      ),
     );
   }
 }
