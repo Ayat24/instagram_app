@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class WebScreen extends StatefulWidget {
-  const WebScreen({super.key});
+class MobileScreen extends StatefulWidget {
+  const MobileScreen({super.key});
 
   @override
-  State<WebScreen> createState() => _WebScreenState();
+  State<MobileScreen> createState() => _MobileScreenState();
 }
 
-class _WebScreenState extends State<WebScreen> {
+class _MobileScreenState extends State<MobileScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
