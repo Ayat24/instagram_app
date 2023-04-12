@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:instagram_app/screens/home.dart';
+import 'package:instagram_app/screens/search.dart';
 import 'package:instagram_app/shered/colors.dart';
 
 class MobileScreen extends StatefulWidget {
@@ -12,11 +13,13 @@ class MobileScreen extends StatefulWidget {
 class _MobileScreenState extends State<MobileScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+   return Scaffold(
       bottomNavigationBar: CupertinoTabBar(
           backgroundColor: mobileBackgroundColor,
           onTap: (index) {
+       
             _pageController.jumpToPage(index);
+            
           },
           items: [
             BottomNavigationBarItem(
@@ -50,7 +53,7 @@ class _MobileScreenState extends State<MobileScreen> {
                 ),
                 label: ""),
           ]),
-      body: PageView(
+  body: PageView(
         onPageChanged: (index) {
           print("------- $index");
         },
@@ -58,7 +61,8 @@ class _MobileScreenState extends State<MobileScreen> {
         controller: _pageController,
         children: [
           Home(),
-        ],
+          Search(),
+         
       ),
     );
   }
