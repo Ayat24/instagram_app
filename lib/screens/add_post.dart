@@ -13,9 +13,7 @@ class _AddPostState extends State<AddPost> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: mobileBackgroundColor,
-      appBar: AppBar(
-        title: Text("AddPost Screen"),
-      ),
+      body: Center(),
     );
   }
 }
