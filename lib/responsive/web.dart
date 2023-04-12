@@ -50,7 +50,7 @@ class _WebScreenState extends State<WebScreen> {
             onPressed: () {},
           ),
         ],
-        title: Text("web screen"),
+        backgroundColor: mobileBackgroundColor,
       ),
     );
   }
