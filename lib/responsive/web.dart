@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_app/screens/add_post.dart';
+import 'package:instagram_app/screens/home.dart';
+import 'package:instagram_app/screens/profile.dart';
+import 'package:instagram_app/screens/search.dart';
 import 'package:instagram_app/shered/colors.dart';
 
 class WebScreen extends StatefulWidget {
@@ -65,6 +69,7 @@ class _WebScreenState extends State<WebScreen> {
           Home(),
           Search(),
           AddPost(),
+          Center(child: Text("Love u ♥")),
           Profile(),
         ],
       ),
