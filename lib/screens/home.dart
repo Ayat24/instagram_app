@@ -58,8 +58,13 @@ class _HomeState extends State<Home> {
                   ],
                 ),
                 IconButton(onPressed: () {}, icon: Icon(Icons.more_vert)),
-              ],
+               ],
             ),
+          ),
+          Image.network(
+            // widget.snap["postUrl"],
+            "https://cdn1-m.alittihad.ae/store/archive/image/2021/10/22/6266a092-72dd-4a2f-82a4-d22ed9d2cc59.jpg?width=1300",
+          
           ),
     );
   }
