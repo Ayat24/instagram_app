@@ -55,7 +55,13 @@ class _WebScreenState extends State<WebScreen> {
           "assets/img/instagram.svg",
           color: primaryColor,
           height: 32,
+        ),
       ),
+      body: PageView(
+        onPageChanged: (index) {
+         
+        },
+
     );
   }
 }
