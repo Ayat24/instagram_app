@@ -36,8 +36,8 @@ class _HomeState extends State<Home> {
         children: [
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 13),
-       
-   
+            child: Row(
+    mainAxisAlignment: MainAxisAlignment.spaceBetween,
     );
   }
 }
