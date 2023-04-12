@@ -79,7 +79,28 @@ class _HomeState extends State<Home> {
                       onPressed: () {},
                       icon: Icon(Icons.favorite_border),
                     ),
-                
+                    IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.comment_outlined,
+                      ),
+                    ),
+   IconButton(
+                      onPressed: () {},
+                      icon: Icon(
+                        Icons.send,
+                      ),
+                    ),
+                  ],
+                ),
+                IconButton(
+                  onPressed: () {},
+                  icon: Icon(Icons.bookmark_outline),
+                ),
+              ],
+            ),
+          ),
+
     );
   }
 }
