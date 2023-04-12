@@ -28,31 +28,31 @@ class _MobileScreenState extends State<MobileScreen> {
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.home,
-                  color: secondaryColor,
+                  color: currentPage == 0 ? primaryColor : secondaryColor,
                 ),
                 label: ""),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.search,
-                  color: primaryColor,
+                  color: currentPage == 1 ? primaryColor : secondaryColor,
                 ),
                 label: ""),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.add_circle,
-                  color: secondaryColor,
+                  color: currentPage == 2 ? primaryColor : secondaryColor,
                 ),
                 label: ""),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.favorite,
-                  color: secondaryColor,
+                  color: currentPage == 3 ? primaryColor : secondaryColor,
                 ),
                 label: ""),
             BottomNavigationBarItem(
                 icon: Icon(
                   Icons.person,
-                  color: secondaryColor,
+                  color: currentPage == 4 ? primaryColor : secondaryColor,
                 ),
                 label: ""),
           ]),
