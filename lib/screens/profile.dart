@@ -37,7 +37,7 @@ class _ProfileState extends State<Profile> {
               ),
       
                 child: Row(
-              
+                  
                   children: [
                     Column(
                       children: [
@@ -48,7 +48,10 @@ class _ProfileState extends State<Profile> {
                             fontWeight: FontWeight.bold,
                           ),
                         ),
-                       
+                        SizedBox(
+                          height: 5,
+                        ),
+                      
             ],
           )
         ],
