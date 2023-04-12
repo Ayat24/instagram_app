@@ -61,6 +61,12 @@ class _WebScreenState extends State<WebScreen> {
         onPageChanged: (index) {},
         physics: NeverScrollableScrollPhysics(),
         // controller: _pageController,
+        children: [
+          Home(),
+          Search(),
+          AddPost(),
+          Profile(),
+        ],
       ),
     );
   }
