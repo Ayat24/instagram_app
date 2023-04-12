@@ -130,7 +130,11 @@ class _HomeState extends State<Home> {
               ),
             ],
           ),
-
+ GestureDetector(
+            onTap: () {},
+            child: Container(
+               ),
+          ),
     );
   }
 }
