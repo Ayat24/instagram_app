@@ -126,8 +126,7 @@ class _ProfileState extends State<Profile> {
           ),
          SizedBox(
             height: 9,
-          ),  
-          Row(
+          ),    Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               ElevatedButton.icon(
@@ -156,7 +155,10 @@ class _ProfileState extends State<Profile> {
                     ),
                   ),
                 ),
-              ),      
+              ),
+               SizedBox(
+                width: 15,
+              ),    
    ]
     );
   }
