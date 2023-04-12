@@ -21,7 +21,12 @@ class _MobileScreenState extends State<MobileScreen> {
             _pageController.jumpToPage(index);
           },
           items: [
-            BottomNavigationBarItem(),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.home,
+                  color: secondaryColor,
+                ),
+                label: ""),
           ]),
     );
   }
