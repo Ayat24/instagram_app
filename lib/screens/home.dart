@@ -133,6 +133,8 @@ class _HomeState extends State<Home> {
  GestureDetector(
             onTap: () {},
             child: Container(
+                margin: EdgeInsets.fromLTRB(10, 13, 9, 10),
+                width: double.infinity,
                ),
           ),
     );
