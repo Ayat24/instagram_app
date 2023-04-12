@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_app/screens/home.dart';
 import 'package:instagram_app/shered/colors.dart';
 
 class MobileScreen extends StatefulWidget {
@@ -55,6 +56,9 @@ class _MobileScreenState extends State<MobileScreen> {
         },
         physics: NeverScrollableScrollPhysics(),
         controller: _pageController,
+        children: [
+          Home(),
+        ],
       ),
     );
   }
