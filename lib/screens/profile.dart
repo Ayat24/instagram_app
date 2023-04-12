@@ -14,6 +14,7 @@ class _ProfileState extends State<Profile> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: mobileBackgroundColor,
+        title: Text("Layla Hassan"),
       ),
     );
   }
