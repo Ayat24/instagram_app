@@ -33,35 +33,45 @@ class _WebScreenState extends State<WebScreen> {
               Icons.home,
               color: primaryColor,
             ),
-            onPressed: () {},
+            onPressed: () {
+              navigate2Screen(0);
+            },
           ),
           IconButton(
             icon: Icon(
               Icons.search,
-              color: secondaryColor,
+              color: page == 1 ? primaryColor : secondaryColor,
             ),
-            onPressed: () {},
+            onPressed: () {
+              navigate2Screen(1);
+            },
           ),
           IconButton(
             icon: Icon(
               Icons.add_a_photo,
-              color: secondaryColor,
+              color: page == 2 ? primaryColor : secondaryColor,
             ),
-            onPressed: () {},
+            onPressed: () {
+              navigate2Screen(2);
+            },
           ),
           IconButton(
             icon: Icon(
               Icons.favorite,
-              color: secondaryColor,
+              color: page == 3 ? primaryColor : secondaryColor,
             ),
-            onPressed: () {},
+            onPressed: () {
+              navigate2Screen(3);
+            },
           ),
           IconButton(
             icon: Icon(
               Icons.person,
-              color: secondaryColor,
+              color: page == 4 ? primaryColor : secondaryColor,
             ),
-            onPressed: () {},
+            onPressed: () {
+              navigate2Screen(4);
+            },
           ),
         ],
         backgroundColor: mobileBackgroundColor,
