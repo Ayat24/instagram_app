@@ -18,7 +18,7 @@ class _MobileScreenState extends State<MobileScreen> {
           backgroundColor: mobileBackgroundColor,
           onTap: (index) {
            
-           
+            _pageController.jumpToPage(index);
           },
           },
   }
