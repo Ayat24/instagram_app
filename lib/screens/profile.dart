@@ -126,7 +126,14 @@ class _ProfileState extends State<Profile> {
           ),
          SizedBox(
             height: 9,
-          ),     
+          ),  
+          Row(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              ElevatedButton.icon(
+              
+                ),
+              ),      
    ]
     );
   }
