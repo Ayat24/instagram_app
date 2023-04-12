@@ -27,6 +27,30 @@ class _MobileScreenState extends State<MobileScreen> {
                   color: secondaryColor,
                 ),
                 label: ""),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.search,
+                  color: primaryColor,
+                ),
+                label: ""),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.add_circle,
+                  color: secondaryColor,
+                ),
+                label: ""),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.favorite,
+                  color: secondaryColor,
+                ),
+                label: ""),
+            BottomNavigationBarItem(
+                icon: Icon(
+                  Icons.person,
+                  color: secondaryColor,
+                ),
+                label: ""),
           ]),
     );
   }
