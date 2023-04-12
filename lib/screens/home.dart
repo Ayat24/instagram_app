@@ -114,7 +114,13 @@ class _HomeState extends State<Home> {
               SizedBox(
                 width: 9,
               ),
-             
+              Text(
+               
+                "USERNAME ",
+                textAlign: TextAlign.start,
+                style: TextStyle(
+                    fontSize: 20, color: Color.fromARGB(255, 189, 196, 199)),
+              ),
 
 
     );
