@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:instagram_app/shered/colors.dart';
 
 class MobileScreen extends StatefulWidget {
   const MobileScreen({super.key});
@@ -17,9 +18,11 @@ class _MobileScreenState extends State<MobileScreen> {
       bottomNavigationBar: CupertinoTabBar(
           backgroundColor: mobileBackgroundColor,
           onTap: (index) {
-           
             _pageController.jumpToPage(index);
           },
-          },
+          items: [
+            BottomNavigationBarItem(),
+          ]),
+    );
   }
 }
