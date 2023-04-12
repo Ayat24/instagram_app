@@ -17,7 +17,7 @@ class _ProfileState extends State<Profile> {
         backgroundColor: mobileBackgroundColor,
         title: Text("Layla Hassan"),
       ),
-    body: Column(
+      body: Column(
         children: [
           Row(
             children: [
@@ -35,7 +35,7 @@ class _ProfileState extends State<Profile> {
                       "https://i.pinimg.com/564x/94/df/a7/94dfa775f1bad7d81aa9898323f6f359.jpg"),
                 ),
               ),
-               Expanded(
+              Expanded(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -113,20 +113,21 @@ class _ProfileState extends State<Profile> {
               )
             ],
           ),
- Container(
+          Container(
               margin: EdgeInsets.fromLTRB(15, 21, 0, 0),
               width: double.infinity,
               child: Text(" Cute & nice girl")),
- SizedBox(
+          SizedBox(
             height: 15,
           ),
-       Divider(
+          Divider(
             color: Colors.white,
             thickness: 0.44,
           ),
-         SizedBox(
+          SizedBox(
             height: 9,
-          ),    Row(
+          ),
+          Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               ElevatedButton.icon(
@@ -156,10 +157,10 @@ class _ProfileState extends State<Profile> {
                   ),
                 ),
               ),
-               SizedBox(
+              SizedBox(
                 width: 15,
-              ), 
-                    ElevatedButton.icon(
+              ),
+              ElevatedButton.icon(
                 onPressed: () {},
                 icon: Icon(
                   Icons.logout,
@@ -182,9 +183,8 @@ class _ProfileState extends State<Profile> {
                 ),
               ),
             ],
-          ), 
-
-            SizedBox(
+          ),
+          SizedBox(
             height: 9,
           ),
           Divider(
@@ -193,8 +193,8 @@ class _ProfileState extends State<Profile> {
           ),
           SizedBox(
             height: 19,
-          ),  
-      
+          ),
+          Expanded(
             child: GridView.builder(
                 gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
                     crossAxisCount: 2,
@@ -214,11 +214,9 @@ class _ProfileState extends State<Profile> {
                     ),
                   );
                 }),
-          
+          ),
         ],
       ),
     );
   }
-}     
-
-  
+}
