@@ -135,7 +135,12 @@ class _HomeState extends State<Home> {
             child: Container(
                 margin: EdgeInsets.fromLTRB(10, 13, 9, 10),
                 width: double.infinity,
-               ),
+                child: Text(
+                  "view all 100 comments",
+                  style: TextStyle(
+                      fontSize: 18, color: Color.fromARGB(214, 157, 157, 165)),
+                  textAlign: TextAlign.start,
+                )),
           ),
     );
   }
