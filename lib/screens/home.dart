@@ -66,7 +66,7 @@ class _HomeState extends State<Home> {
             "https://cdn1-m.alittihad.ae/store/archive/image/2021/10/22/6266a092-72dd-4a2f-82a4-d22ed9d2cc59.jpg?width=1300",
             fit: BoxFit.cover,
             height: MediaQuery.of(context).size.height * 0.35,
-           
+            width: double.infinity,
           ),
     );
   }
