@@ -87,11 +87,32 @@ class _ProfileState extends State<Profile> {
                     SizedBox(
                       width: 17,
                     ),
-           
+             Column(
+                      children: [
+                        Text(
+                          "15",
+                          style: TextStyle(
+                            fontSize: 22,
+                            fontWeight: FontWeight.bold,
+                          ),
+                        ),
+                        SizedBox(
+                          height: 5,
+                        ),
+                        Text(
+                          "Following",
+                          style: TextStyle(
+                              fontSize: 15,
+                              fontWeight: FontWeight.bold,
+                              color: Colors.grey),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              )
             ],
-          )
-        ],
-      ),
+          ),
     );
   }
 }
