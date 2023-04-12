@@ -121,7 +121,8 @@ class _ProfileState extends State<Profile> {
             height: 15,
           ),
        Divider(
-          
+            color: Colors.white,
+            thickness: 0.44,
           ),   
    ]
     );
