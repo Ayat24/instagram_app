@@ -14,6 +14,7 @@ class _SearchState extends State<Search> {
     return Scaffold(
       backgroundColor: mobileBackgroundColor,
       appBar: AppBar(
+        backgroundColor: mobileBackgroundColor,
         title: Text("Search Screen"),
       ),
     );
