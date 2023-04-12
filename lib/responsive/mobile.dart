@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:instagram_app/screens/add_post.dart';
 import 'package:instagram_app/screens/home.dart';
