@@ -17,7 +17,7 @@ class _ProfileState extends State<Profile> {
         backgroundColor: mobileBackgroundColor,
         title: Text("Layla Hassan"),
       ),
-      body: Column(
+    body: Column(
         children: [
           Row(
             children: [
@@ -35,9 +35,9 @@ class _ProfileState extends State<Profile> {
                       "https://i.pinimg.com/564x/94/df/a7/94dfa775f1bad7d81aa9898323f6f359.jpg"),
                 ),
               ),
-      
+             
                 child: Row(
-                  
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Column(
                       children: [
@@ -87,7 +87,7 @@ class _ProfileState extends State<Profile> {
                     SizedBox(
                       width: 17,
                     ),
-             Column(
+                    Column(
                       children: [
                         Text(
                           "15",
@@ -113,6 +113,10 @@ class _ProfileState extends State<Profile> {
               )
             ],
           ),
+ Container(
+              ),
+
+   
     );
   }
 }
