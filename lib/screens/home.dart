@@ -50,7 +50,15 @@ class _HomeState extends State<Home> {
                     SizedBox(
                       width: 17,
                     ),
-                     ],
+                    Text(
+                    
+                      "Layla hassan",
+                      style: TextStyle(fontSize: 15),
+                    ),
+                  ],
+                ),
+                IconButton(onPressed: () {}, icon: Icon(Icons.more_vert)),
+              ],
             ),
           ),
     );
