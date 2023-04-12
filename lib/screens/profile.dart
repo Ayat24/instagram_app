@@ -35,7 +35,7 @@ class _ProfileState extends State<Profile> {
                       "https://i.pinimg.com/564x/94/df/a7/94dfa775f1bad7d81aa9898323f6f359.jpg"),
                 ),
               ),
-             
+               Expanded(
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
@@ -123,7 +123,10 @@ class _ProfileState extends State<Profile> {
        Divider(
             color: Colors.white,
             thickness: 0.44,
-          ),   
+          ),
+         SizedBox(
+            height: 9,
+          ),     
    ]
     );
   }
