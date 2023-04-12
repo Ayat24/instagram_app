@@ -47,8 +47,10 @@ class _HomeState extends State<Home> {
                         
                           "https://i.pinimg.com/564x/94/df/a7/94dfa775f1bad7d81aa9898323f6f359.jpg"),
                     ),
-                   
-              ],
+                    SizedBox(
+                      width: 17,
+                    ),
+                     ],
             ),
           ),
     );
