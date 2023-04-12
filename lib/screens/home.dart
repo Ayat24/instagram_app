@@ -32,48 +32,45 @@ class _HomeState extends State<Home> {
           height: 32,
         ),
       ),
-    body: Column(
+      body: Column(
         children: [
           Padding(
             padding: const EdgeInsets.symmetric(vertical: 16, horizontal: 13),
             child: Row(
-    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-     children: [
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
                 Row(
                   children: [
                     CircleAvatar(
                       radius: 26,
                       backgroundImage: NetworkImage(
-                        
                           "https://i.pinimg.com/564x/94/df/a7/94dfa775f1bad7d81aa9898323f6f359.jpg"),
                     ),
                     SizedBox(
                       width: 17,
                     ),
                     Text(
-                    
                       "Layla hassan",
                       style: TextStyle(fontSize: 15),
                     ),
                   ],
                 ),
                 IconButton(onPressed: () {}, icon: Icon(Icons.more_vert)),
-               ],
+              ],
             ),
           ),
           Image.network(
-            
             "https://cdn1-m.alittihad.ae/store/archive/image/2021/10/22/6266a092-72dd-4a2f-82a4-d22ed9d2cc59.jpg?width=1300",
             fit: BoxFit.cover,
             height: MediaQuery.of(context).size.height * 0.35,
             width: double.infinity,
           ),
-    Padding(
+          Padding(
             padding: const EdgeInsets.symmetric(vertical: 11),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
-    Row(
+                Row(
                   children: [
                     IconButton(
                       onPressed: () {},
@@ -85,7 +82,7 @@ class _HomeState extends State<Home> {
                         Icons.comment_outlined,
                       ),
                     ),
-   IconButton(
+                    IconButton(
                       onPressed: () {},
                       icon: Icon(
                         Icons.send,
@@ -100,7 +97,7 @@ class _HomeState extends State<Home> {
               ],
             ),
           ),
- Container(
+          Container(
               margin: EdgeInsets.fromLTRB(10, 0, 0, 10),
               width: double.infinity,
               child: Text(
@@ -109,19 +106,18 @@ class _HomeState extends State<Home> {
                 style: TextStyle(
                     fontSize: 18, color: Color.fromARGB(214, 157, 157, 165)),
               )),
- Row(
+          Row(
             children: [
               SizedBox(
                 width: 9,
               ),
               Text(
-               
                 "USERNAME ",
                 textAlign: TextAlign.start,
                 style: TextStyle(
                     fontSize: 20, color: Color.fromARGB(255, 189, 196, 199)),
               ),
- Text(
+              Text(
                 // " ${widget.snap["description"]}",
                 " Sidi Bou Said ♥",
                 textAlign: TextAlign.start,
@@ -130,7 +126,7 @@ class _HomeState extends State<Home> {
               ),
             ],
           ),
- GestureDetector(
+          GestureDetector(
             onTap: () {},
             child: Container(
                 margin: EdgeInsets.fromLTRB(10, 13, 9, 10),
@@ -142,6 +138,17 @@ class _HomeState extends State<Home> {
                   textAlign: TextAlign.start,
                 )),
           ),
+          Container(
+              margin: EdgeInsets.fromLTRB(10, 0, 9, 10),
+              width: double.infinity,
+              child: Text(
+                "10June 2022",
+                style: TextStyle(
+                    fontSize: 18, color: Color.fromARGB(214, 157, 157, 165)),
+                textAlign: TextAlign.start,
+              )),
+        ],
+      ),
     );
   }
 }
