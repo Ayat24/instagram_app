@@ -58,10 +58,10 @@ class _WebScreenState extends State<WebScreen> {
         ),
       ),
       body: PageView(
-        onPageChanged: (index) {
-         
-        },
-
+        onPageChanged: (index) {},
+        physics: NeverScrollableScrollPhysics(),
+        // controller: _pageController,
+      ),
     );
   }
 }
