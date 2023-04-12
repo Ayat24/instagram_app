@@ -19,10 +19,13 @@ class _HomeState extends State<Home> {
               icon: Icon(
                 Icons.messenger_outline,
               )),
-      ,
+          IconButton(
+              onPressed: () {},
+              icon: Icon(
+                Icons.logout,
+              )),
         ],
         backgroundColor: mobileBackgroundColor,
-       
         title: SvgPicture.asset(
           "assets/img/instagram.svg",
           color: primaryColor,
