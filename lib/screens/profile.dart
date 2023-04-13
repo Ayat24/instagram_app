@@ -11,6 +11,7 @@ class Profile extends StatefulWidget {
 class _ProfileState extends State<Profile> {
   @override
   Widget build(BuildContext context) {
+    final double widthScreen = MediaQuery.of(context).size.width;
     return Scaffold(
       backgroundColor: mobileBackgroundColor,
       appBar: AppBar(
@@ -144,8 +145,8 @@ class _ProfileState extends State<Profile> {
                 style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all(
                       Color.fromARGB(0, 90, 103, 223)),
-                  padding: MaterialStateProperty.all(
-                      EdgeInsets.symmetric(vertical: 10, horizontal: 33)),
+                  padding: MaterialStateProperty.all(EdgeInsets.symmetric(
+                      vertical: widthScreen > 600 ? 19 : 10, horizontal: 33)),
                   shape: MaterialStateProperty.all(
                     RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(7),
@@ -173,8 +174,8 @@ class _ProfileState extends State<Profile> {
                 style: ButtonStyle(
                   backgroundColor: MaterialStateProperty.all(
                       Color.fromARGB(143, 255, 55, 112)),
-                  padding: MaterialStateProperty.all(
-                      EdgeInsets.symmetric(vertical: 10, horizontal: 33)),
+                  padding: MaterialStateProperty.all(EdgeInsets.symmetric(
+                      vertical: widthScreen > 600 ? 19 : 10, horizontal: 33)),
                   shape: MaterialStateProperty.all(
                     RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(7),
