@@ -195,25 +195,30 @@ class _ProfileState extends State<Profile> {
             height: 19,
           ),
           Expanded(
-            child: GridView.builder(
-                gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2,
-                    childAspectRatio: 3 / 2,
-                    crossAxisSpacing: 10,
-                    mainAxisSpacing: 10),
-                itemCount: 3,
-                itemBuilder: (BuildContext context, int index) {
-                  return ClipRRect(
-                    borderRadius: BorderRadius.circular(4),
-                    child: Image.network(
-                      "https://cdn1-m.alittihad.ae/store/archive/image/2021/10/22/6266a092-72dd-4a2f-82a4-d22ed9d2cc59.jpg?width=1300",
-                      // height: 333,
-                      // width: 100,
+            child: Padding(
+              padding: widthScreen > 600
+                  ? const EdgeInsets.all(66.0)
+                  : const EdgeInsets.all(3.0),
+              child: GridView.builder(
+                  gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 2,
+                      childAspectRatio: 3 / 2,
+                      crossAxisSpacing: 10,
+                      mainAxisSpacing: 10),
+                  itemCount: 3,
+                  itemBuilder: (BuildContext context, int index) {
+                    return ClipRRect(
+                      borderRadius: BorderRadius.circular(4),
+                      child: Image.network(
+                        "https://cdn1-m.alittihad.ae/store/archive/image/2021/10/22/6266a092-72dd-4a2f-82a4-d22ed9d2cc59.jpg?width=1300",
+                        // height: 333,
+                        // width: 100,
 
-                      fit: BoxFit.cover,
-                    ),
-                  );
-                }),
+                        fit: BoxFit.cover,
+                      ),
+                    );
+                  }),
+            ),
           ),
         ],
       ),
