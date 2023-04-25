@@ -32,7 +32,6 @@ class _LoginState extends State<Login> {
     return Scaffold(
         backgroundColor: mobileBackgroundColor,
         appBar: AppBar(
-          // backgroundColor: appbarGreen,
           title: Text("Sign in"),
         ),
         body: Center(
@@ -73,11 +72,7 @@ class _LoginState extends State<Login> {
                 height: 33,
               ),
               ElevatedButton(
-                onPressed: () async {
-                  // await signIn();
-                  // if (!mounted) return;
-                  // showSnackBar(context, "Done ... ");
-                },
+                onPressed: () async {},
                 style: ButtonStyle(
                   // backgroundColor: MaterialStateProperty.all(BTNgreen),
                   padding: MaterialStateProperty.all(EdgeInsets.all(12)),
