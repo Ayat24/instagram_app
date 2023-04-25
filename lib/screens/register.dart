@@ -68,6 +68,7 @@ class _RegisterState extends State<Register> {
 
   @override
   void dispose() {
+    // TODO: implement dispose
     emailController.dispose();
     passwordController.dispose();
 
@@ -79,15 +80,19 @@ class _RegisterState extends State<Register> {
 
   @override
   Widget build(BuildContext context) {
+    final double widthScreen = MediaQuery.of(context).size.width;
     return Scaffold(
       backgroundColor: mobileBackgroundColor,
       appBar: AppBar(
         title: Text("Register"),
         elevation: 0,
+        // backgroundColor: appbarGreen,
       ),
       body: Center(
         child: Padding(
-          padding: const EdgeInsets.all(33.0),
+          padding: widthScreen > 600
+              ? EdgeInsets.symmetric(horizontal: widthScreen * .3)
+              : const EdgeInsets.all(33.0),
           child: SingleChildScrollView(
             child: Form(
               key: _formKey,
@@ -122,7 +127,10 @@ class _RegisterState extends State<Register> {
                           left: 99,
                           bottom: -10,
                           child: IconButton(
-                            onPressed: () {},
+                            onPressed: () {
+                              // uploadImage2Screen();
+                              // showmodel();
+                            },
                             icon: const Icon(Icons.add_a_photo),
                             color: Color.fromARGB(255, 208, 218, 224),
                           ),
